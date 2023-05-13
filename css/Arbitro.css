@@ -19,8 +19,17 @@ body {
     border-color: #FF7474;
 }
 
-#txtSearch {
-    background: url(images/index.png) no-repeat scroll 7px 7px;
+.card {
     
-    padding-left:30px;
+    background-color: #FF7474;
+    color: white;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+#txtSearch {
+
 }
