@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #FF7474;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+body {
+    background-color: #353535;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #FF7474;
+    border-color: #FF7474;
+}
+
+#txtSearch {
+    background: url(images/index.png) no-repeat scroll 7px 7px;
+    
+    padding-left:30px;
+}
