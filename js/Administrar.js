@@ -21,29 +21,45 @@ function cambiarContenido(opcion) {
                 <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="button-container"  style="text-align: center;">
-                <button type="button" class="btn btn-secondary">Cancelar</button>
+                <button type="submit" class="btn btn-secondary">Cancelar</button>
                 <button type="submit" class="btn btn-danger">Guardar</button>
             </div>
             <table>
-            <thead>
-            <tr class="equipo">
-                <th>Jugador</th>
-              </tr>
-            </thead>
-            <tbody>
-            <tr class="equipo">
-                <td>Michael</td>
-              </tr>
-              <tr class="equipo">
-                <td>Kevin</td>
-              </tr>
-              <tr class="equipo">
-                <td>Jesus</td>
-              </tr>
-            </tbody>
-          </table>
+                <thead>
+                <tr class="equipo">
+                    <th>Jugador</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="equipo">
+                    <td>Michael</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                <tr class="equipo">
+                    <td>Kevin</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                <tr class="equipo">
+                    <td>Jesus</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-        </form>  
+    </form>  
       `;
     } 
   
@@ -66,7 +82,9 @@ function cambiarContenido(opcion) {
                         12345
                     </div>
                     <div class="delete-center-div">
-                        <button type="button" class="btn btn-secondary">Modificar</button>
+                        <a class="nav-link active" aria-current="page" onclick="cambiarContenido3('Fut')">
+                            <button type="button" class="btn btn-secondary">Modificar</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -87,7 +105,9 @@ function cambiarContenido(opcion) {
                     98765
                 </div>
                 <div class="delete-center-div">
-                    <button type="button" class="btn btn-secondary">Modificar</button>
+                    <a class="nav-link active" aria-current="page" onclick="cambiarContenido3('Basket')">
+                        <button type="button" class="btn btn-secondary">Modificar</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -214,4 +234,103 @@ function cambiarContenido2(opcion){
         </div>
       `;
     } 
+}
+
+function cambiarContenido3(opcion){
+    if (opcion === 'Fut') 
+    {
+      document.getElementById('contenido2').innerHTML = `
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ID del jugador</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <table>
+                <thead>
+                <tr class="equipo">
+                    <th>Jugador</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="equipo">
+                    <td>Armando</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                <tr class="equipo">
+                    <td>Sergio</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                <tr class="equipo">
+                    <td>Kevin</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="button-container"  style="text-align: center;">
+                <button type="submit" class="btn btn-secondary">Cancelar</button>
+                <button type="submit" class="btn btn-danger">Guardar</button>
+            </div>
+      `;
+    }
+
+    else if (opcion === 'Basket') 
+    {
+      document.getElementById('contenido2').innerHTML = `
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ID del jugador</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <table>
+                <thead>
+                <tr class="equipo">
+                    <th>Jugador</th>
+                    <th>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="equipo">
+                    <td>Michael</td>
+                    <td>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </td>
+                </tr>
+                <tr class="equipo">
+                    <td>Kevin</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                <tr class="equipo">
+                    <td>Jesus</td>
+                    <td>
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="button-container"  style="text-align: center;">
+                <button type="submit" class="btn btn-secondary">Cancelar</button>
+                <button type="submit" class="btn btn-danger">Guardar</button>
+            </div>
+      `;
+    }
 }
