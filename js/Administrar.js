@@ -2,7 +2,48 @@ function cambiarContenido(opcion) {
     if (opcion === 'add') 
     {
       document.getElementById('contenido2').innerHTML = `
-       
+      <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre del equipo</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Deporte</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccionar deporte</option>
+                    <option value="1">Futbol</option>
+                    <option value="2">Basketball</option>
+                    <option value="3">Volleyball</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">ID del jugador</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="button-container"  style="text-align: center;">
+                <button type="button" class="btn btn-secondary">Cancelar</button>
+                <button type="submit" class="btn btn-danger">Guardar</button>
+            </div>
+            <table>
+            <thead>
+            <tr class="equipo">
+                <th>Jugador</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr class="equipo">
+                <td>Michael</td>
+              </tr>
+              <tr class="equipo">
+                <td>Kevin</td>
+              </tr>
+              <tr class="equipo">
+                <td>Jesus</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </form>  
       `;
     } 
   

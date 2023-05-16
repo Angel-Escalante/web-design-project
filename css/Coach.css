@@ -158,3 +158,27 @@ td:first-child {
   margin-left: 10px;
 }
 
+label {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+input, select {
+  margin-left: 10px;
+}
+
+.form-select, .form-control {
+  width: 90%;
+  max-width: 100%;
+}
+
+.button-container {
+  position: fixed;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
