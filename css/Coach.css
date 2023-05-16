@@ -1,0 +1,160 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar
+{
+    background-color: #D9D9D9;
+}
+
+.container-fluid
+{
+    background-color: #E3D1D1
+}
+
+.nav.nav-pills.nav-justified .nav-link.active {
+    background-color: #FF7474;
+  }
+
+.nav.nav-pills.nav-justified .nav-link {
+    background-color: #9E4545;
+    color: #fff;
+  }
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 64
+  }
+
+.alert{
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+    color: black;
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.alert .material-symbols-outlined {
+    font-size: 4em; 
+  }
+
+.flex-container {
+    display: flex;
+  }
+  
+.left-div {
+    flex-basis: 25%;
+  }
+  
+.center-div {
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+.right-div {
+    flex-basis: 25%;
+    text-align: right;
+    max-width: 20%;
+  }
+
+.delete-center-div {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.navbar .container-fluid{
+    background-color: #D9D9D9
+}
+
+.nav.nav-pills.nav-justified .nav-link.active {
+    background-color: #FF7474;
+}
+
+.nav.nav-pills.nav-justified .nav-link {
+    background-color: #9E4545;
+    color: #fff;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 64
+}
+ 
+.container-fluid .material-symbols-outlined {
+    font-size: 4em; 
+}
+
+
+.box {
+  width: 50%;
+  height: 100px;
+  margin: 0 3px;
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 80%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #9E4545;
+  color: #fff;
+}
+
+tr.equipo {
+  background-color: #D9D9D9;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+#texto {
+  margin-left: 25px;
+}
+
+#texto p {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.information{
+  margin-left: 10px;
+}
+

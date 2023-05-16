@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #FF7474;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+body {
+    background-color: #353535;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #FF7474;
+    border-color: #FF7474;
+}
+
+.card {
+    
+    background-color: #FF7474;
+    color: white;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+#txtSearch {
+
+}
