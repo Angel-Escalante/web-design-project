@@ -175,9 +175,6 @@ input, select {
 }
 
 .button-container {
-  position: fixed;
-  left: 0;
-  bottom: 40px;
   width: 100%;
   text-align: center;
   padding: 20px;

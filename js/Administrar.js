@@ -20,10 +20,6 @@ function cambiarContenido(opcion) {
                 <label for="exampleInputEmail1" class="form-label">ID del jugador</label>
                 <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-            <div class="button-container"  style="text-align: center;">
-                <button type="submit" class="btn btn-secondary">Cancelar</button>
-                <button type="submit" class="btn btn-danger">Guardar</button>
-            </div>
             <table>
                 <thead>
                 <tr class="equipo">
@@ -58,6 +54,10 @@ function cambiarContenido(opcion) {
                 </tr>
                 </tbody>
             </table>
+            <div class="button-container"  style="text-align: center;">
+                <button type="submit" class="btn btn-secondary">Cancelar</button>
+                <button type="submit" class="btn btn-danger">Guardar</button>
+            </div>
         </div>
     </form>  
       `;
