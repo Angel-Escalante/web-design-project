@@ -11,3 +11,12 @@ color: white;
     -webkit-border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
 }
+
+.nav.nav-pills.nav-justified .nav-link.active {
+    background-color: #FF7474;
+  }
+
+.nav.nav-pills.nav-justified .nav-link {
+    background-color: #9E4545;
+    color: #fff;
+  }
