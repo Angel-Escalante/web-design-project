@@ -12,11 +12,19 @@ color: white;
     -moz-border-radius: 10px 10px 10px 10px;
 }
 
-.nav.nav-pills.nav-justified .nav-link.active {
+.botonesInfo:hover {
     background-color: #FF7474;
   }
 
-.nav.nav-pills.nav-justified .nav-link {
-    background-color: #9E4545;
-    color: #fff;
+  
+  @media only screen and (max-width: 760px) {
+    .buttonn{
+        width: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 761px) {
+    .buttonn{
+        width: 40px;
+    }
   }
