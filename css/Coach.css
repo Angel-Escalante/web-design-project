@@ -78,10 +78,6 @@ a {
   text-align: left;
 }
 
-.navbar .container-fluid{
-    background-color: #D9D9D9
-}
-
 .nav.nav-pills.nav-justified .nav-link.active {
     background-color: #FF7474;
 }
