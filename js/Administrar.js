@@ -2,64 +2,76 @@ function cambiarContenido(opcion) {
     if (opcion === 'add') 
     {
       document.getElementById('contenido2').innerHTML = `
-      <form>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nombre del equipo</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <form>
+    <div class="container-fluid">
+        <div class="row col-12 mb-3">
+            <div class="col-12">
+                <label for="exampleInputEmail1" class="form-label">Nombre del equipo</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
         </div>
-        <div class="mb-3">
+        <div class="row col-12 mb-3">
+            <div class="col-12">
                 <label for="exampleInputPassword1" class="form-label">Deporte</label>
                 <select class="form-select" aria-label="Default select example">
-                    <option selected>Seleccionar deporte</option>
-                    <option value="1">Futbol</option>
-                    <option value="2">Basketball</option>
-                    <option value="3">Volleyball</option>
+                        <option selected>Seleccionar deporte</option>
+                        <option value="1">Futbol</option>
+                        <option value="2">Basketball</option>
+                        <option value="3">Volleyball</option>
                 </select>
             </div>
-            <div class="mb-3">
+        </div>
+        <div class="row mb-3">
+            <div>
                 <label for="exampleInputEmail1" class="form-label">ID del jugador</label>
                 <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
+        </div>
+        <div class="row ms-2 me-2">
             <table>
                 <thead>
-                <tr class="equipo">
-                    <th>Jugador</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr class="equipo">
-                    <td>Michael</td>
-                    <td>
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
-                </td>
-                </tr>
-                <tr class="equipo">
-                    <td>Kevin</td>
-                    <td>
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
-                </td>
-                </tr>
-                <tr class="equipo">
-                    <td>Jesus</td>
-                    <td>
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
-                </td>
-                </tr>
-                </tbody>
-            </table>
+                    <tr class="equipo">
+                        <th>Jugador</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="equipo">
+                        <td>Michael</td>
+                        <td>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </td>
+                    </tr>
+                    <tr class="equipo">
+                        <td>Kevin</td>
+                        <td>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </td>
+                    </tr>
+                    <tr class="equipo">
+                        <td>Jesus</td>
+                        <td>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
             <div class="button-container"  style="text-align: center;">
                 <button type="submit" class="btn btn-secondary">Cancelar</button>
                 <button type="submit" class="btn btn-danger">Guardar</button>
             </div>
         </div>
-    </form>  
+        </div>
+        
+    </div>
+</form>  
       `;
     } 
   

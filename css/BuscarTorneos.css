@@ -1,0 +1,10 @@
+body {
+    height: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    background-color: #FF7474;
+    color: white;
+}
