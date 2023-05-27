@@ -1,8 +1,18 @@
-function cambiarContenido(opcion) {
-  // Aquí puedes agregar lógica para cambiar el contenido según la opción seleccionada
-  // Por ejemplo, podrías mostrar u ocultar diferentes secciones del contenido
+$(function() {
+  $("#btnTitle").on("click", function() {
+    $("#btnTeam").text("");
+    window.location.href = "Equipos.html";
+  });
+});
 
-  // Ejemplo:
+function cambiarContenido(opcion) {
+  $("#btnTeam").text(opcion + "/");
+  $("#btnTeam").on("click", function() {
+    $("#btnTournament").text("");
+    $("#opcionesEquipo").html("");
+    cambiarContenido(opcion);
+  });
+
   if (opcion === 'Tigres') 
   {
     document.getElementById('contenido').innerHTML = `
@@ -58,12 +68,13 @@ function cambiarContenido(opcion) {
 
 function cambiarContenido2(opcion) {
   document.getElementById('contenido').innerHTML = ``;
-  
+  $("#btnTournament").text(opcion);
+
   if (opcion === 'Fut 7 Otay') 
   {
-    document.getElementById('contenido2').innerHTML = `
+    document.getElementById('opcionesEquipo').innerHTML = `
       <nav class="nav nav-pills nav-justified">
-        <a class="nav-link" aria-current="page" onclick="cambiarContenido3('Fut','calendar')">
+        <a id="btnCalendar" class="nav-link active" aria-current="page" onclick="cambiarContenido3('Fut','calendar')">
           <span class="material-symbols-outlined">
             calendar_month
           </span>
@@ -85,11 +96,13 @@ function cambiarContenido2(opcion) {
         </a>
       </nav>
     `;
+
+    cambiarContenido3('Fut','calendar');
   } 
 
   else if (opcion === 'Basketball bancario') 
   {
-    document.getElementById('contenido2').innerHTML = `
+    document.getElementById('opcionesEquipo').innerHTML = `
       <nav class="nav nav-pills nav-justified">
         <a class="nav-link" aria-current="page" onclick="cambiarContenido3('Basket','calendar')">
           <span class="material-symbols-outlined">
@@ -115,7 +128,7 @@ function cambiarContenido2(opcion) {
     `;
   } 
 
-  let filtros = document.querySelectorAll("#contenido2 a");
+  let filtros = document.querySelectorAll("#opcionesEquipo a");
   for(let i = 0; i < filtros.length; i++) {
     filtros[i].addEventListener("click", function() {
       // eliminar la clase "active" de todos los elementos <a> dentro del filtro

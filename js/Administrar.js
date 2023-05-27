@@ -1,5 +1,7 @@
 function cambiarContenido(opcion) {
-    if (opcion === 'add') 
+    $("#lblAction").text(opcion);
+
+    if (opcion === 'Agregar') 
     {
       document.getElementById('contenido2').innerHTML = `
     <form>
@@ -28,8 +30,8 @@ function cambiarContenido(opcion) {
             </div>
         </div>
         <div class="row ms-2 me-2">
-            <table>
-                <thead>
+            <table class="border rounded">
+                <thead class="border-top rounded">
                     <tr class="equipo">
                         <th>Jugador</th>
                         <th></th>
@@ -75,7 +77,7 @@ function cambiarContenido(opcion) {
       `;
     } 
   
-    else if (opcion === 'settings') 
+    else if (opcion === 'Modificar') 
     {
       document.getElementById('contenido2').innerHTML = `
         <div class="alert alert-primary" role="alert">
@@ -126,7 +128,7 @@ function cambiarContenido(opcion) {
       `;
     } 
 
-    else if (opcion === 'delete') 
+    else if (opcion === 'Borrar') 
     {
       document.getElementById('contenido2').innerHTML = `
       <div id="contenido">
